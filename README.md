@@ -1,4 +1,5 @@
-# MSPR1
-# Le projet d'application Mobile pour la société GOSTYLE
-# Lecture de QR Code pour promotions
-# 
+# Games Of Tacos© :
+
+Developed in Java and Kotlin 
+Espresso testing
+Gamified Application - integrated TRex google game
