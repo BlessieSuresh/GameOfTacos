@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/image_background">
+
+    //Game
+    <com.lionzxy.trex_progress.TRexProgressView
+        android:id="@+id/mesbons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Bons"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ListBonValide"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:contextClickable="false"
+
+        android:fadeScrollbars="true"
+
+        android:focusable="auto"
+        android:scrollbars="vertical"
+        app:fastScrollEnabled="false"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="675dp"
+        app:itemBackground="@color/purple"
+        app:itemIconTint="@drawable/selector"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        >
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

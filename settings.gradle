@@ -1,0 +1,4 @@
+include ':trex-library'
+include ':trex-progress'
+include ':app'
+rootProject.name='EgoStyleApp'
